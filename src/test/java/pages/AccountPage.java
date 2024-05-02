@@ -36,6 +36,7 @@ public class AccountPage extends BasePage {
     public String getEmail(){
 //        String emailText = getElement(email).getText();
         return getElement(email).findElement(By.xpath("*")).getText();
+//        return getElement(email).findElement(By.xpath("*")).getAttribute("href");
     }
 
     public SearchPage searchForItem(String itemName)  {
